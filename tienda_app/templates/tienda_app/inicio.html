@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda - Inicio</title>
+</head>
+<body>
+    <h1>Catalogo de libros</h1>
+
+    {% if libros %}
+        <ul>
+            {% for libro in libros %}
+                <li>
+                    <strong>{{ libro.titulo }}</strong> - ${{ libro.precio }}
+                    <a href="/compra/{{ libro.id }}/">Comprar</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay libros disponibles todavia.</p>
+    {% endif %}
+</body>
+</html>
