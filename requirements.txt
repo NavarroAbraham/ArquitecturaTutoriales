@@ -29,7 +29,7 @@ pillow
 platformdirs
 pre_commit
 psycopg
-psycopg2
+psycopg2-binary
 pycparser
 PySocks
 PyYAML
