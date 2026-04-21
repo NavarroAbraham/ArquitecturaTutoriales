@@ -9,9 +9,9 @@ services:
       - db
 
   pagos_flask:
-    build: ./microservicio_pagos
-    ports:
-      - "5000:5000"
+  image: flaskapp
+  ports:
+    - "5000:5000"
 
   nginx:
     image: nginx:1.25-alpine
