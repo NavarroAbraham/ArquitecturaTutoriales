@@ -8,6 +8,7 @@ charset-normalizer
 click
 colorama
 distlib
+gunicorn
 Django
 django-filter
 djangorestframework
